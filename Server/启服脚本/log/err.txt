@@ -1,0 +1,486 @@
+[2018-12-07 15:44:48] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\manager.py", line 23, in InitManger
+    self.m_oSocket.bind(("10.32.12.103", 12080))
+  File "D:\Python2.7.15\lib\socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 10049] 
+---------extra---------
+
+[2018-12-07 15:45:12] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\manager.py", line 23, in InitManger
+    self.m_oSocket.bind(("10.32.12.103", 12080))
+  File "D:\Python2.7.15\lib\socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 10049] 
+---------extra---------
+
+[2018-12-07 15:51:20] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\manager.py", line 23, in InitManger
+    self.m_oSocket.bind(("10.32.12.103", 12080))
+  File "D:\Python2.7.15\lib\socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 10049] 
+---------extra---------
+
+[2018-12-07 15:52:54] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\manager.py", line 23, in InitManger
+    self.m_oSocket.bind(("10.32.12.103", 12080))
+  File "D:\Python2.7.15\lib\socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 10049] 
+---------extra---------
+
+[2018-12-07 15:53:23] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\manager.py", line 24, in InitManger
+    self.m_oSocket.bind(("10.32.12.103", 12080))
+  File "D:\Python2.7.15\lib\socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 10049] 
+---------extra---------
+
+[2018-12-09 16:28:23] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\manager.py", line 23, in InitManger
+    self.m_oSocket.bind(("127.0.0.1", 12080))
+  File "D:\Python2.7.15\lib\socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 10013] 
+---------extra---------
+
+[2018-12-10 16:30:06] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 36, in run
+    sData = struct.pack("i", sData)
+error: cannot convert argument to integer
+---------extra---------
+recvfail2
+[2018-12-10 16:33:14] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 36, in run
+    sData = struct.pack("i", sData)
+error: cannot convert argument to integer
+---------extra---------
+recvfail2
+[2018-12-10 19:00:26] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 36, in run
+    self.Recv(sData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 46, in Recv
+    sSize = struct.pack("i",int(self.m_sData[:4]))
+ValueError: invalid literal for int() with base 10: '\x1d'
+---------extra---------
+recvfail2
+[2018-12-10 19:00:33] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 36, in run
+    self.Recv(sData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 46, in Recv
+    sSize = struct.pack("i",int(self.m_sData[:4]))
+ValueError: invalid literal for int() with base 10: '\x1d'
+---------extra---------
+recvfail2
+[2018-12-10 19:03:24] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 37, in run
+    self.Recv(sData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 47, in Recv
+    iSize = struct.unpack("i", sSize)[0]
+NameError: global name 'sSize' is not defined
+---------extra---------
+recvfail2
+[2018-12-10 19:16:07] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 37, in run
+    self.Recv(sData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 59, in Recv
+    self.OnCommand(dPackData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 109, in OnCommand
+    commandctrl.OnCommand(self, dData)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\__init__.py", line 15, in OnCommand
+    oManager.OnCommand(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\mutexlock\__init__.py", line 18, in ___AutoLock
+    ret = func(*args, **kwargs)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\manager.py", line 28, in OnCommand
+    oFunc(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 53, in OnCommand
+    pubglobalmanager.CallManagerFunc("demo", "CalPos", oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\pubglobalmanager.py", line 30, in CallManagerFunc
+    return oFunc(*args)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 31, in CalPos
+    r1 = dData["radius1"]
+KeyError: 'radius1'
+---------extra---------
+recvfail2
+[2018-12-10 19:17:10] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 37, in run
+    self.Recv(sData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 59, in Recv
+    self.OnCommand(dPackData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 109, in OnCommand
+    commandctrl.OnCommand(self, dData)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\__init__.py", line 15, in OnCommand
+    oManager.OnCommand(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\mutexlock\__init__.py", line 18, in ___AutoLock
+    ret = func(*args, **kwargs)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\manager.py", line 28, in OnCommand
+    oFunc(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 53, in OnCommand
+    pubglobalmanager.CallManagerFunc("demo", "CalPos", oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\pubglobalmanager.py", line 30, in CallManagerFunc
+    return oFunc(*args)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 31, in CalPos
+    r1 = dData["radius1"]
+KeyError: 'radius1'
+---------extra---------
+recvfail2
+[2018-12-10 19:18:26] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 37, in run
+    self.Recv(sData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 59, in Recv
+    self.OnCommand(dPackData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 110, in OnCommand
+    commandctrl.OnCommand(self, dData)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\__init__.py", line 15, in OnCommand
+    oManager.OnCommand(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\mutexlock\__init__.py", line 18, in ___AutoLock
+    ret = func(*args, **kwargs)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\manager.py", line 28, in OnCommand
+    oFunc(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 53, in OnCommand
+    pubglobalmanager.CallManagerFunc("demo", "CalPos", oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\pubglobalmanager.py", line 30, in CallManagerFunc
+    return oFunc(*args)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 31, in CalPos
+    r1 = dData["radius1"]
+KeyError: 'radius1'
+---------extra---------
+recvfail2
+[2018-12-10 19:19:00] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 37, in run
+    self.Recv(sData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 59, in Recv
+    self.OnCommand(dPackData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 110, in OnCommand
+    commandctrl.OnCommand(self, dData)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\__init__.py", line 15, in OnCommand
+    oManager.OnCommand(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\mutexlock\__init__.py", line 18, in ___AutoLock
+    ret = func(*args, **kwargs)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\manager.py", line 28, in OnCommand
+    oFunc(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 54, in OnCommand
+    pubglobalmanager.CallManagerFunc("demo", "CalPos", oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\pubglobalmanager.py", line 30, in CallManagerFunc
+    return oFunc(*args)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 31, in CalPos
+    r1 = dData["radius1"]
+KeyError: 'radius1'
+---------extra---------
+recvfail2
+[2018-12-10 19:19:50] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 37, in run
+    self.Recv(sData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 59, in Recv
+    self.OnCommand(dPackData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 110, in OnCommand
+    commandctrl.OnCommand(self, dData)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\__init__.py", line 15, in OnCommand
+    oManager.OnCommand(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\mutexlock\__init__.py", line 18, in ___AutoLock
+    ret = func(*args, **kwargs)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\manager.py", line 30, in OnCommand
+    oFunc(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 54, in OnCommand
+    pubglobalmanager.CallManagerFunc("demo", "CalPos", oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\pubglobalmanager.py", line 30, in CallManagerFunc
+    return oFunc(*args)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 31, in CalPos
+    r1 = dData["radius1"]
+KeyError: 'radius1'
+---------extra---------
+recvfail2
+[2018-12-10 19:22:36] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 37, in run
+    self.Recv(sData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 59, in Recv
+    self.OnCommand(dPackData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 110, in OnCommand
+    commandctrl.OnCommand(self, dData)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\__init__.py", line 15, in OnCommand
+    oManager.OnCommand(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\mutexlock\__init__.py", line 18, in ___AutoLock
+    ret = func(*args, **kwargs)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\manager.py", line 30, in OnCommand
+    oFunc(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 54, in OnCommand
+    pubglobalmanager.CallManagerFunc("demo", "CalPos", oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\pubglobalmanager.py", line 30, in CallManagerFunc
+    return oFunc(*args)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 31, in CalPos
+    r1 = dData["radius1"]
+KeyError: 'radius1'
+---------extra---------
+recvfail2
+[2018-12-10 19:23:23] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 37, in run
+    self.Recv(sData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 59, in Recv
+    self.OnCommand(dPackData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 110, in OnCommand
+    commandctrl.OnCommand(self, dData)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\__init__.py", line 15, in OnCommand
+    oManager.OnCommand(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\mutexlock\__init__.py", line 18, in ___AutoLock
+    ret = func(*args, **kwargs)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\manager.py", line 30, in OnCommand
+    oFunc(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 55, in OnCommand
+    pubglobalmanager.CallManagerFunc("demo", "CalPos", oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\pubglobalmanager.py", line 30, in CallManagerFunc
+    return oFunc(*args)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 31, in CalPos
+    r1 = dData["radius1"]
+KeyError: 'radius1'
+---------extra---------
+recvfail2
+[2018-12-11 19:33:20] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 37, in run
+    self.Recv(sData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 58, in Recv
+    self.OnCommand(dPackData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 109, in OnCommand
+    commandctrl.OnCommand(self, dData)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\__init__.py", line 15, in OnCommand
+    oManager.OnCommand(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\mutexlock\__init__.py", line 18, in ___AutoLock
+    ret = func(*args, **kwargs)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\manager.py", line 32, in OnCommand
+    oFunc(oClient, dData)
+TypeError: OnUpdateRListCommand() takes exactly 1 argument (2 given)
+---------extra---------
+recvfail2
+[2018-12-11 19:36:06] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 37, in run
+    self.Recv(sData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 58, in Recv
+    self.OnCommand(dPackData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 109, in OnCommand
+    commandctrl.OnCommand(self, dData)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\__init__.py", line 15, in OnCommand
+    oManager.OnCommand(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\mutexlock\__init__.py", line 18, in ___AutoLock
+    ret = func(*args, **kwargs)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\manager.py", line 32, in OnCommand
+    oFunc(oClient, dData)
+TypeError: OnUpdateRListCommand() takes exactly 1 argument (2 given)
+---------extra---------
+recvfail2
+[2018-12-11 19:36:59] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 37, in run
+    self.Recv(sData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 58, in Recv
+    self.OnCommand(dPackData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 109, in OnCommand
+    commandctrl.OnCommand(self, dData)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\__init__.py", line 15, in OnCommand
+    oManager.OnCommand(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\mutexlock\__init__.py", line 18, in ___AutoLock
+    ret = func(*args, **kwargs)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\manager.py", line 32, in OnCommand
+    oFunc(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 69, in OnUpdateRListCommand
+    pubglobalmanager.CallManagerFunc("demo", "UpdateRankingList", oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\pubglobalmanager.py", line 30, in CallManagerFunc
+    return oFunc(*args)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 44, in UpdateRankingList
+    self.AddRankData(dData)
+  File "D:\ChromeDownloads\服务端\server\code\dbctrl\saveobject.py", line 72, in AddRankData
+    sSql = GetRListCreateSql(dData)
+NameError: global name 'GetRListCreateSql' is not defined
+---------extra---------
+recvfail2
+[2018-12-11 19:40:37] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 37, in run
+    self.Recv(sData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 58, in Recv
+    self.OnCommand(dPackData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 109, in OnCommand
+    commandctrl.OnCommand(self, dData)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\__init__.py", line 15, in OnCommand
+    oManager.OnCommand(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\mutexlock\__init__.py", line 18, in ___AutoLock
+    ret = func(*args, **kwargs)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\manager.py", line 32, in OnCommand
+    oFunc(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 69, in OnUpdateRListCommand
+    pubglobalmanager.CallManagerFunc("demo", "UpdateRankingList", oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\pubglobalmanager.py", line 30, in CallManagerFunc
+    return oFunc(*args)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 44, in UpdateRankingList
+    self.AddRankData(dData)
+  File "D:\ChromeDownloads\服务端\server\code\dbctrl\saveobject.py", line 72, in AddRankData
+    sSql = GetRListCreateSql(dData)
+NameError: global name 'GetRListCreateSql' is not defined
+---------extra---------
+recvfail2
+[2018-12-12 17:45:20] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 37, in run
+    self.Recv(sData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 58, in Recv
+    self.OnCommand(dPackData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 109, in OnCommand
+    commandctrl.OnCommand(self, dData)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\__init__.py", line 15, in OnCommand
+    oManager.OnCommand(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\mutexlock\__init__.py", line 18, in ___AutoLock
+    ret = func(*args, **kwargs)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\manager.py", line 32, in OnCommand
+    oFunc(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 68, in OnLoginCommand
+    pubglobalmanager.CallManagerFunc("demo", "UserLogin", oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\pubglobalmanager.py", line 30, in CallManagerFunc
+    return oFunc(*args)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 47, in UserLogin
+    dReturn = self.QueryLoginMsg(dData)
+  File "D:\ChromeDownloads\服务端\server\code\dbctrl\saveobject.py", line 82, in QueryLoginMsg
+    for i in range(len(resultList[0])):
+IndexError: tuple index out of range
+---------extra---------
+recvfail2
+[2018-12-12 17:47:35] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 37, in run
+    self.Recv(sData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 58, in Recv
+    self.OnCommand(dPackData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 109, in OnCommand
+    commandctrl.OnCommand(self, dData)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\__init__.py", line 15, in OnCommand
+    oManager.OnCommand(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\mutexlock\__init__.py", line 18, in ___AutoLock
+    ret = func(*args, **kwargs)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\manager.py", line 32, in OnCommand
+    oFunc(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 68, in OnLoginCommand
+    pubglobalmanager.CallManagerFunc("demo", "UserLogin", oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\pubglobalmanager.py", line 30, in CallManagerFunc
+    return oFunc(*args)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 47, in UserLogin
+    dReturn = self.QueryLoginMsg(dData)
+  File "D:\ChromeDownloads\服务端\server\code\dbctrl\saveobject.py", line 82, in QueryLoginMsg
+    for i in range(len(resultList[0])):
+IndexError: tuple index out of range
+---------extra---------
+recvfail2
+[2018-12-12 17:51:48] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 37, in run
+    self.Recv(sData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 58, in Recv
+    self.OnCommand(dPackData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 109, in OnCommand
+    commandctrl.OnCommand(self, dData)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\__init__.py", line 15, in OnCommand
+    oManager.OnCommand(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\mutexlock\__init__.py", line 18, in ___AutoLock
+    ret = func(*args, **kwargs)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\manager.py", line 32, in OnCommand
+    oFunc(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 68, in OnLoginCommand
+    pubglobalmanager.CallManagerFunc("demo", "UserLogin", oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\pubglobalmanager.py", line 30, in CallManagerFunc
+    return oFunc(*args)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 48, in UserLogin
+    self.Send(dReturn)
+AttributeError: 'CDemo' object has no attribute 'Send'
+---------extra---------
+recvfail2
+[2018-12-12 21:45:04] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 37, in run
+    self.Recv(sData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 58, in Recv
+    self.OnCommand(dPackData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 109, in OnCommand
+    commandctrl.OnCommand(self, dData)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\__init__.py", line 15, in OnCommand
+    oManager.OnCommand(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\mutexlock\__init__.py", line 18, in ___AutoLock
+    ret = func(*args, **kwargs)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\manager.py", line 32, in OnCommand
+    oFunc(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 68, in OnLoginCommand
+    pubglobalmanager.CallManagerFunc("demo", "UserLogin", oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\pubglobalmanager.py", line 30, in CallManagerFunc
+    return oFunc(*args)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 47, in UserLogin
+    dReturn = self.QueryLoginMsg(dData)
+  File "D:\ChromeDownloads\服务端\server\code\dbctrl\saveobject.py", line 85, in QueryLoginMsg
+    if dData["password"] == resultList[1][i]:
+IndexError: tuple index out of range
+---------extra---------
+recvfail2
+[2018-12-12 21:46:40] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 37, in run
+    self.Recv(sData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 58, in Recv
+    self.OnCommand(dPackData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 109, in OnCommand
+    commandctrl.OnCommand(self, dData)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\__init__.py", line 15, in OnCommand
+    oManager.OnCommand(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\mutexlock\__init__.py", line 18, in ___AutoLock
+    ret = func(*args, **kwargs)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\manager.py", line 32, in OnCommand
+    oFunc(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 68, in OnLoginCommand
+    pubglobalmanager.CallManagerFunc("demo", "UserLogin", oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\pubglobalmanager.py", line 30, in CallManagerFunc
+    return oFunc(*args)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 47, in UserLogin
+    dReturn = self.QueryLoginMsg(dData)
+  File "D:\ChromeDownloads\服务端\server\code\dbctrl\saveobject.py", line 86, in QueryLoginMsg
+    if dData["password"] == resultList[1][i]:
+IndexError: tuple index out of range
+---------extra---------
+recvfail2
+[2018-12-13 12:43:31] ---------TraceErr---------
+Traceback (most recent call last):
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 37, in run
+    self.Recv(sData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 58, in Recv
+    self.OnCommand(dPackData)
+  File "D:\ChromeDownloads\服务端\server\code\clientsocket\clientobject.py", line 109, in OnCommand
+    commandctrl.OnCommand(self, dData)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\__init__.py", line 15, in OnCommand
+    oManager.OnCommand(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\mutexlock\__init__.py", line 18, in ___AutoLock
+    ret = func(*args, **kwargs)
+  File "D:\ChromeDownloads\服务端\server\code\commandctrl\manager.py", line 33, in OnCommand
+    oFunc(oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 72, in OnUpdateRListCommand
+    pubglobalmanager.CallManagerFunc("demo", "UpdateRankingList", oClient, dData)
+  File "D:\ChromeDownloads\服务端\server\code\pubglobalmanager.py", line 30, in CallManagerFunc
+    return oFunc(*args)
+  File "D:\ChromeDownloads\服务端\server\code\demo.py", line 46, in UpdateRankingList
+    self.AddRankData(dData)
+AttributeError: 'CDemo' object has no attribute 'AddRankData'
+---------extra---------
+recvfail2
